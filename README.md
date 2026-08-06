@@ -492,3 +492,79 @@ This project is intended for educational purposes.
 
 
 
+
+
+# Assignment-5 8 Puzzle Problem using Breadth-First Search (BFS)
+
+This project implements the **8 Puzzle Problem** using the **Breadth-First Search (BFS)** algorithm in Python. The program explores all possible puzzle states level by level until it reaches the goal state.
+
+## 📌 Features
+- Solves the 8-puzzle using BFS.
+- Finds whether the puzzle is solvable.
+- Displays the level-wise traversal of puzzle states.
+- Simple and beginner-friendly Python implementation.
+
+## 🛠️ Technologies Used
+- Python 3
+- `collections.deque` (for BFS queue)
+
+## 📂 Project Structure
+```
+assignment-5.ipynb
+README.md
+```
+
+## 🎯 Goal State
+```
+1 2 3
+4 5 6
+7 8 _
+```
+
+where `0` represents the blank tile.
+
+## ▶️ How to Run
+
+1. Clone the repository:
+```bash
+git clone https://github.com/your-username/8-puzzle-bfs.git
+```
+
+2. Navigate to the project folder:
+```bash
+cd 8-puzzle-bfs
+```
+
+3. Run the notebook or Python code.
+
+4. Enter the initial puzzle state as a 9-digit string.
+
+Example:
+```
+123456708
+```
+
+## 📖 Example Output
+```
+Enter puzzle: 123456708
+Level 0 : 123456708
+Level 1 : 123406758
+...
+Solved at Level 1
+```
+
+## 🧠 Algorithm
+- Start from the initial puzzle configuration.
+- Use a queue to explore states in BFS order.
+- Generate all valid moves by swapping the blank tile.
+- Stop when the goal state (`123456780`) is reached.
+
+## 📚 Concepts Used
+- Breadth-First Search (BFS)
+- Queue (Deque)
+- State Space Search
+- Graph Traversal
+
+## 👨‍💻 Author
+**Rittick Mallick**
+```
