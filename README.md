@@ -567,7 +567,13 @@ Solved at Level 1
 
 ## 👨‍💻 Author
 **Rittick Mallick**
-```
+
+
+
+
+
+
+
 # Assignment 6 – A* Algorithm and 8-Puzzle Using Heuristic
 
 ## 📌 Overview
@@ -754,5 +760,8 @@ After completing this assignment, you should understand:
 * Visualizing algorithmic solutions using Matplotlib.
 
 ## ✅ Conclusion
+
+This assignment demonstrates how **heuristic-based A* search** can efficiently solve both pathfinding and puzzle-solving problems. The graphical visualizations make it easier to understand how the algorithm explores states and determines an optimal or best path toward the goal.
+
 
 This assignment demonstrates how **heuristic-based A* search** can efficiently solve both pathfinding and puzzle-solving problems. The graphical visualizations make it easier to understand how the algorithm explores states and determines an optimal or best path toward the goal.
