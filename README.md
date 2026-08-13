@@ -568,3 +568,191 @@ Solved at Level 1
 ## 👨‍💻 Author
 **Rittick Mallick**
 ```
+# Assignment 6 – A* Algorithm and 8-Puzzle Using Heuristic
+
+## 📌 Overview
+
+This assignment demonstrates the implementation of **A* (A-Star) Search Algorithm** using Python. It covers pathfinding in grid-based environments and solving the **8-Puzzle problem using a heuristic function**.
+
+The implementations use Python's `heapq` for priority queue management and `matplotlib` for graphical visualization.
+
+## 🧩 Topics Covered
+
+The notebook contains the following implementations:
+
+1. **A* Algorithm**
+
+   * Finds the shortest path between a start and goal position.
+   * Uses Manhattan Distance as the heuristic.
+   * Handles obstacles in a grid.
+   * Displays the resulting path graphically.
+
+2. **A* Algorithm Using Another Path**
+
+   * Demonstrates A* on a larger 7×7 grid.
+   * Finds the best path while avoiding obstacles.
+   * Calculates and displays the path cost.
+   * Provides a graphical representation with directional arrows.
+
+3. **8-Puzzle Problem Using Heuristic**
+
+   * Solves the classic 8-Puzzle problem.
+   * Uses **Manhattan Distance** as the heuristic function.
+   * Uses A* search to find a sequence of moves from the initial state to the goal state.
+   * Visually displays each puzzle state during the solution.
+
+## 🛠️ Technologies Used
+
+* **Python 3**
+* **Heap Queue (`heapq`)**
+* **Matplotlib**
+* **Matplotlib Patches**
+
+## 🧠 A* Algorithm
+
+A* combines the actual cost of reaching a state with an estimated cost to the goal.
+
+The evaluation function is:
+
+```text
+f(n) = g(n) + h(n)
+```
+
+Where:
+
+* `g(n)` = actual cost from the starting node to node `n`
+* `h(n)` = estimated cost from node `n` to the goal
+* `f(n)` = total estimated cost
+
+### Heuristic Used
+
+The implementations use **Manhattan Distance**:
+
+```text
+h(n) = |x1 - x2| + |y1 - y2|
+```
+
+This heuristic is suitable for movement where the agent can move horizontally and vertically.
+
+## 🧱 Grid Representation
+
+The grid uses:
+
+```text
+0 → Free cell
+1 → Obstacle
+```
+
+For example:
+
+```python
+grid = [
+    [0, 0, 0, 0, 0],
+    [0, 1, 1, 0, 0],
+    [0, 0, 0, 0, 0],
+    [0, 1, 0, 1, 0],
+    [0, 0, 0, 0, 0]
+]
+```
+
+The algorithm avoids cells containing `1` and searches for a path through cells containing `0`.
+
+## 🧩 8-Puzzle
+
+The 8-Puzzle is represented as a tuple containing numbers `1–8` and `0`, where `0` represents the blank space.
+
+### Goal State
+
+```text
+1 2 3
+4 5 6
+7 8 _
+```
+
+In the program:
+
+```python
+goal = (
+    1, 2, 3,
+    4, 5, 6,
+    7, 8, 0
+)
+```
+
+### Heuristic
+
+The 8-Puzzle implementation uses **Manhattan Distance** to calculate how far each tile is from its correct position.
+
+The blank tile (`0`) is excluded from the heuristic calculation.
+
+## 📊 Visualization
+
+The notebook uses `matplotlib` to visualize:
+
+* Grid obstacles
+* Start position
+* Goal position
+* A* path
+* Direction of movement
+* 8-Puzzle states
+* Final goal state
+
+The 8-Puzzle visualization displays the solution step-by-step using a graphical 3×3 puzzle board.
+
+## 🚀 How to Run
+
+### 1. Install Python
+
+Make sure Python 3 is installed on your system.
+
+### 2. Install Required Libraries
+
+```bash
+pip install matplotlib
+```
+
+`heapq` is included in Python's standard library, so it does not need to be installed separately.
+
+### 3. Open the Notebook
+
+Open:
+
+```text
+assignment-6.ipynb
+```
+
+using Jupyter Notebook, JupyterLab, Google Colab, or another compatible environment.
+
+### 4. Run the Cells
+
+Execute the cells sequentially to:
+
+* Run the A* grid search.
+* Find the best path in the second grid.
+* Solve and visualize the 8-Puzzle.
+
+## 📁 Project Structure
+
+```text
+Assignment-6/
+│
+├── assignment-6.ipynb
+└── README.md
+```
+
+## 🎯 Learning Objectives
+
+After completing this assignment, you should understand:
+
+* The working principle of A* Search.
+* The importance of heuristic functions.
+* Manhattan Distance.
+* Priority queues in search algorithms.
+* Grid-based pathfinding.
+* Obstacle avoidance.
+* Solving the 8-Puzzle using informed search.
+* Visualizing algorithmic solutions using Matplotlib.
+
+## ✅ Conclusion
+
+This assignment demonstrates how **heuristic-based A* search** can efficiently solve both pathfinding and puzzle-solving problems. The graphical visualizations make it easier to understand how the algorithm explores states and determines an optimal or best path toward the goal.
