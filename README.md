@@ -771,7 +771,7 @@ This assignment demonstrates how **heuristic-based A* search** can efficiently s
 
 
 
-Assignment-8 Minimax Algorithm Implementation
+#Assignment-8 Minimax Algorithm Implementation
 
 ## 📌 Project Overview
 
