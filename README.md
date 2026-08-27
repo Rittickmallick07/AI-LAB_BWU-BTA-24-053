@@ -765,3 +765,106 @@ This assignment demonstrates how **heuristic-based A* search** can efficiently s
 
 
 This assignment demonstrates how **heuristic-based A* search** can efficiently solve both pathfinding and puzzle-solving problems. The graphical visualizations make it easier to understand how the algorithm explores states and determines an optimal or best path toward the goal.
+
+
+
+
+
+
+Assignment-8 Minimax Algorithm Implementation
+
+## 📌 Project Overview
+
+This project implements the **Minimax Algorithm** for a two-player game using **Python recursion**.
+
+The algorithm considers two players:
+
+* **MAX Player** – tries to maximize the score.
+* **MIN Player** – tries to minimize the score.
+
+The program calculates the best possible score for the MAX player and displays a graphical representation of the Minimax game tree.
+
+---
+
+## 🛠️ Technologies Used
+
+* Python
+* Math Library
+* Matplotlib
+
+---
+
+## 📊 Leaf Node Values
+
+The leaf node values used in this project are:
+
+```text
+3, 5, 2, 9, 15, 5, 23, 23
+```
+
+---
+
+## ⚙️ Algorithm
+
+The Minimax algorithm works recursively:
+
+1. Check whether the current node is a leaf node.
+2. If it is a leaf node, return its value.
+3. If it is the MAX player's turn, choose the maximum value.
+4. If it is the MIN player's turn, choose the minimum value.
+5. Continue recursively until the root node returns the optimal score.
+
+---
+
+## ▶️ Output
+
+```text
+Best possible score: 15
+```
+
+Therefore, the **optimal score for the MAX player is 15**.
+
+---
+
+## 📈 Visualization
+
+The program uses **Matplotlib** to display a graphical Minimax game tree showing:
+
+* MAX nodes
+* MIN nodes
+* Leaf nodes
+* Connections between parent and child nodes
+
+---
+
+## 🚀 How to Run
+
+1. Install Python.
+2. Install Matplotlib:
+
+```bash
+pip install matplotlib
+```
+
+3. Run the Python code or Jupyter Notebook.
+4. The program will display:
+
+```text
+Best possible score: 15
+```
+
+5. A graphical Minimax game tree will also be displayed.
+
+---
+
+## 📂 File
+
+```text
+assignment-8.ipynb
+```
+
+---
+
+## 🎯 Conclusion
+
+This project demonstrates the implementation of the **Minimax Algorithm using recursion**. The MAX and MIN players make optimal decisions at each level of the game tree. For the given leaf-node values, the optimal score obtained by the MAX player is **15**.
