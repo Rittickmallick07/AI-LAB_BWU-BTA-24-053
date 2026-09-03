@@ -868,3 +868,277 @@ assignment-8.ipynb
 ## 🎯 Conclusion
 
 This project demonstrates the implementation of the **Minimax Algorithm using recursion**. The MAX and MIN players make optimal decisions at each level of the game tree. For the given leaf-node values, the optimal score obtained by the MAX player is **15**.
+
+
+
+
+
+
+
+
+# Assignment-9 🤖 Rule-Based Expert System Using Python
+
+A simple **Rule-Based Expert System** implemented in Python using predefined **IF-THEN rules**. This project demonstrates how an expert system can take user input, apply a set of rules, and generate an appropriate decision or recommendation.
+
+## 📌 About the Project
+
+This project contains two rule-based expert systems:
+
+* 🎓 **Student Performance Evaluation System**
+* 🩺 **Medical Diagnosis Expert System**
+
+Both systems use conditional statements such as `if`, `elif`, and `else` to simulate the decision-making process of a basic expert system.
+
+---
+
+## ✨ Features
+
+### 🎓 Student Performance Evaluation
+
+The system evaluates a student's performance using:
+
+* Student name
+* Attendance percentage
+* Marks percentage
+* Assignment performance
+* Internal assessment
+
+The student is classified into one of four categories:
+
+* ⭐ **Excellent**
+* 👍 **Good**
+* 📊 **Average**
+* ⚠️ **Poor**
+
+### 🩺 Medical Diagnosis
+
+The system accepts the following symptoms:
+
+* Fever
+* Cough
+* Headache
+* Sore throat
+
+Based on the entered symptoms, the system identifies a possible condition using predefined rules.
+
+Possible results include:
+
+* **Possible Flu**
+* **Possible Viral Fever**
+* **Possible Common Cold**
+* **Further Medical Evaluation Required**
+
+---
+
+## 🧠 How the Expert System Works
+
+The system follows a simple rule-based decision-making process:
+
+```text
+             User Input
+                 │
+                 ▼
+        ┌─────────────────┐
+        │  Knowledge Base  │
+        └────────┬────────┘
+                 │
+                 ▼
+          IF-THEN Rules
+                 │
+                 ▼
+        Rule-Based Inference
+                 │
+                 ▼
+              Result
+```
+
+The system does not use machine learning. Instead, it uses manually defined rules to reach a conclusion.
+
+---
+
+# 🎓 Student Performance Evaluation
+
+## Rules Used
+
+| Condition                                                            | Classification |
+| -------------------------------------------------------------------- | -------------- |
+| Attendance ≥ 90 AND Marks ≥ 85 AND Assignment ≥ 85 AND Internal ≥ 85 | **EXCELLENT**  |
+| Attendance ≥ 75 AND Marks ≥ 70 AND Assignment ≥ 70 AND Internal ≥ 70 | **GOOD**       |
+| Attendance ≥ 60 AND Marks ≥ 50 AND Assignment ≥ 50 AND Internal ≥ 50 | **AVERAGE**    |
+| All other conditions                                                 | **POOR**       |
+
+### Example
+
+```text
+STUDENT PERFORMANCE EVALUATION
+----------------------------------------
+Enter student name: RITTICK MALLICK
+Enter attendance percentage: 77
+Enter marks percentage: 79
+Enter assignment performance percentage: 100
+Enter internal assessment percentage: 100
+
+----------------------------------------
+Student Name: RITTICK MALLICK
+Performance: GOOD
+----------------------------------------
+```
+
+---
+
+# 🩺 Medical Diagnosis Expert System
+
+## Symptoms Used
+
+The system asks the user whether they have:
+
+```text
+Fever
+Cough
+Headache
+Sore Throat
+```
+
+## Rules Used
+
+```text
+IF fever = yes AND cough = yes AND sore throat = yes
+THEN Possible Flu
+
+IF fever = yes AND headache = yes AND cough = no
+THEN Possible Viral Fever
+
+IF cough = yes AND sore throat = yes AND fever = no
+THEN Possible Common Cold
+
+OTHERWISE
+Further Medical Evaluation Required
+```
+
+### Example
+
+```text
+MEDICAL DIAGNOSIS EXPERT SYSTEM
+----------------------------------------
+Do you have fever? (yes/no): yes
+Do you have cough? (yes/no): yes
+Do you have headache? (yes/no): yes
+Do you have sore throat? (yes/no): yes
+
+----------------------------------------
+Possible Diagnosis: Possible Flu
+----------------------------------------
+```
+
+---
+
+## 🛠️ Technologies Used
+
+* **Python 3**
+* **Jupyter Notebook**
+* Conditional Statements
+* IF-THEN Rule-Based Reasoning
+* User Input
+
+---
+
+## 📂 Project Structure
+
+```text
+Rule-Based-Expert-System/
+│
+├── assignment-9-0.ipynb
+├── README.md
+└── LICENSE
+```
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/your-username/rule-based-expert-system.git
+```
+
+### 2. Navigate to the Project
+
+```bash
+cd rule-based-expert-system
+```
+
+### 3. Run the Notebook
+
+Open `assignment-9-0.ipynb` using:
+
+* Jupyter Notebook
+* JupyterLab
+* Google Colab
+* VS Code
+
+Run the cells and provide the required inputs.
+
+---
+
+## 📋 Requirements
+
+No external Python libraries are required.
+
+You only need:
+
+```text
+Python 3.x
+Jupyter Notebook
+```
+
+---
+
+## 🎯 Learning Objectives
+
+This project helps demonstrate:
+
+* Understanding of **Expert Systems**
+* Knowledge representation using rules
+* IF-THEN decision-making
+* Basic inference mechanisms
+* User input handling in Python
+* Practical implementation of Artificial Intelligence concepts
+
+---
+
+## ⚠️ Disclaimer
+
+The **Medical Diagnosis Expert System** is created strictly for educational purposes. It uses a small set of predefined rules and cannot provide reliable medical diagnosis.
+
+For actual medical concerns, consult a qualified healthcare professional.
+
+---
+
+## 🔮 Future Improvements
+
+The project can be extended by:
+
+* Adding a graphical user interface (GUI)
+* Adding more medical symptoms and conditions
+* Creating a larger knowledge base
+* Adding confidence scores
+* Storing student evaluation results
+* Adding more detailed performance recommendations
+* Implementing a web-based interface
+
+---
+
+## 👨‍💻 Author
+
+**Rittick Mallick**
+
+B.Tech CSE-AI&ML
+Brainware University
+
+---
+
+## ⭐ Support
+
+If you find this project useful for learning **Artificial Intelligence and Expert Systems**, consider giving the repository a ⭐ on GitHub.
+
